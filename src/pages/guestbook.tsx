@@ -1,9 +1,9 @@
 import PageContainer from '@/components/PageContainer';
 
-export default function Home() {
+export default function Guestbook() {
   return (
     <PageContainer>
-      <h3>Hello World</h3>
+      <h2>Guestbook</h2>
     </PageContainer>
   );
 }
