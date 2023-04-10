@@ -1,5 +1,4 @@
 import { Ubuntu } from 'next/font/google';
-import clsx from 'clsx';
 import Navbar from './Navbar';
 
 const font = Ubuntu({

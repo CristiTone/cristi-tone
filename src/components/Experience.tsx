@@ -42,6 +42,8 @@ function ExperienceCard({ experience }: any) {
             src={experience.icon}
             alt={experience.company_name}
             className="w-[60%] h-[60%] object-contain"
+            width={50}
+            height={50}
           />
         </div>
       }

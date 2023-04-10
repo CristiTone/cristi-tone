@@ -5,6 +5,7 @@ import avatar from '@/assets/cristi.png';
 import Experience from '@/components/Experience';
 import { BlogIcon, GithubIcon, LinkedinIcon } from '@/components/Icons';
 import Technologies from '@/components/Technologies';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   const views = 14;
@@ -58,9 +59,10 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <Technologies />
-        <Experience />
       </section>
+      <Technologies />
+      <Experience />
+      <Footer />
     </PageContainer>
   );
 }

@@ -3,7 +3,9 @@ import { technologies } from '../helpers/experience';
 function TechnologyCard({ tech }: any) {
   return (
     <div className="bg-neutral-100 dark:bg-neutral-800 p-2 rounded-xl hover:translate-y-[-16px] hover:scale-110 transition-all ease-in">
-      <h4 className="text-neutral-200 text-center font-bold">{tech.name}</h4>
+      <h4 className="hidden md:block text-neutral-200 text-center font-bold">
+        {tech.name}
+      </h4>
       {tech.image()}
     </div>
   );

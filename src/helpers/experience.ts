@@ -5,17 +5,25 @@ import {
   JsIcon,
   NextIcon,
   NodeIcon,
-  PostgresqlIcon,
+  SqlIcon,
   ReactIcon,
   TailwindIcon,
   TsIcon,
 } from '@/components/Icons';
 
+import sda from '@/assets/sda.png';
+import sii from '@/assets/sii.png';
+import softvision from '@/assets/softvision.png';
+import sparktech from '@/assets/sparktech.png';
+import ciel from '@/assets/ciel.png';
+import ecrion from '@/assets/ecrion.png';
+
 export const experiences = [
   {
     title: 'Trainer',
     company_name: 'Software Development Academy',
-    iconBg: '#383E56',
+    iconBg: '#fff',
+    icon: sda,
     date: 'December 2022 - present',
     points: [
       'Teaching web technologies like HTML, CSS, Javascript, ReactJS, NodeJS.',
@@ -25,8 +33,9 @@ export const experiences = [
   {
     title: 'ReactJS Developer',
     company_name: 'SII Romania',
-    iconBg: '#E6DEDD',
-    date: 'June 2022 - present',
+    iconBg: '#fff',
+    icon: sii,
+    date: 'June 2022 - April 2023',
     points: [
       'Working with an international client in a fully remote setup.',
       'Developing UI React components and pages.',
@@ -37,7 +46,8 @@ export const experiences = [
   {
     title: 'Software Engineer',
     company_name: 'Cognizant Softvision',
-    iconBg: '#383E56',
+    iconBg: '#01004C',
+    icon: softvision,
     date: 'May 2021 - May 2022',
     points: [
       'Working with various Javascript tools and frameworks such as React JS and Node JS.',
@@ -50,7 +60,8 @@ export const experiences = [
   {
     title: 'Frontend Developer',
     company_name: 'Sparktech Software',
-    iconBg: '#E6DEDD',
+    iconBg: '#EF4538',
+    icon: sparktech,
     date: 'October 2020 - May 2021',
     points: [
       'Worked on a number of 6 presentational applications, that are best described as “PowerPoint presentations on steroids”. Each page of an application is an svg or multiple svgs put together and animated using GreenSock library.',
@@ -61,7 +72,8 @@ export const experiences = [
   {
     title: 'Full Stack Developer',
     company_name: 'Ciel Romania',
-    iconBg: '#E6DEDD',
+    iconBg: '#fff',
+    icon: ciel,
     date: 'June 2020 - September 2020',
     points: [
       'Developing new features requested by the clients.',
@@ -71,7 +83,8 @@ export const experiences = [
   {
     title: 'Full Stack Developer',
     company_name: 'Ecrion International',
-    iconBg: '#E6DEDD',
+    iconBg: '#fff',
+    icon: ecrion,
     date: 'July 2018 - May 2020',
     points: [
       'Bug fixing and feature implementation for company’s applications.',
@@ -117,8 +130,8 @@ export const technologies = [
     image: TsIcon,
   },
   {
-    name: 'PostgreSQL',
-    image: PostgresqlIcon,
+    name: 'SQL',
+    image: SqlIcon,
   },
   {
     name: 'Git',
