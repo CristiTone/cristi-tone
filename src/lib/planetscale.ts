@@ -4,9 +4,9 @@ import { PlanetScaleDialect } from 'kysely-planetscale';
 interface GuestbookTable {
   id: Generated<number>;
   email: string;
-  body: string;
-  created_by: string;
-  updated_at?: string;
+  message: string;
+  author: string;
+  created_at?: Date;
 }
 
 interface ViewsTable {
@@ -21,6 +21,6 @@ interface Database {
 
 export const queryBuilder = new Kysely<Database>({
   dialect: new PlanetScaleDialect({
-    url: process.env.DATABASE_URL,
+    url: process.env.NEXT_PUBLIC_DATABASE_URL,
   }),
 });
