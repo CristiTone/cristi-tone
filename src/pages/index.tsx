@@ -8,7 +8,7 @@ import Technologies from '@/components/Technologies';
 import Footer from '@/components/Footer';
 
 export default function Home() {
-  const views = 14;
+  // const views = 14;
   return (
     <PageContainer>
       <section>
@@ -50,13 +50,13 @@ export default function Home() {
               <GithubIcon />
               <p>check my github</p>
             </a>
-            <Link
+            {/* <Link
               href="/blog"
               className="flex gap-2 items-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
             >
               <BlogIcon />
               <p>{`${views.toLocaleString()} blog views all time`}</p>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>

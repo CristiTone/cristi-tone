@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Fix for react-vertical-timeline-component that caused shake on mobile */
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* Fix for react-vertical-timeline-component that caused date to overlap company image */
 .vertical-timeline-element-date {
   margin: 0 8px;
 }

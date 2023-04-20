@@ -26,7 +26,7 @@ export default function Footer() {
           target="_blank"
           href="https://www.linkedin.com/in/tone-dan-cristian-506405143/"
         >
-          Message me on <LinkedinIcon />
+          Message on <LinkedinIcon />
         </a>
         <a
           className="text-2xl flex gap-2 flex-1 justify-center hover:text-neutral-700 dark:hover:text-neutral-200 transition-all border p-4 border-neutral-200 dark:border-neutral-800 rounded-lg"

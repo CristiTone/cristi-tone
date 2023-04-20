@@ -9,21 +9,19 @@ import 'react-vertical-timeline-component/style.min.css';
 
 import { experiences } from '../helpers/experience';
 
-const textVariant = () => {
-  return {
-    hidden: {
-      y: -50,
-      opacity: 0,
+const textVariant = {
+  hidden: {
+    y: -50,
+    opacity: 0,
+  },
+  show: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: 'spring',
+      duration: 1.25,
     },
-    show: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: 'spring',
-        duration: 1.25,
-      },
-    },
-  };
+  },
 };
 
 function ExperienceCard({ experience }: any) {
@@ -79,7 +77,7 @@ export default function Experience() {
       viewport={{ once: true, amount: 0.05 }}
       className="sm:py-8 py-5 max-w-7xl mx-auto relative z-0"
     >
-      <motion.div variants={textVariant()}>
+      <motion.div variants={textVariant}>
         <p className="sm:text-[18px] text-[14px] uppercase tracking-wider text-center">
           What I have done so far
         </p>
