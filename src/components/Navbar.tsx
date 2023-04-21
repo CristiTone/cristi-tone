@@ -84,7 +84,7 @@ export default function Navbar() {
         </div>
         <LayoutGroup>
           <nav
-            className="flex flex-row md:flex-col items-start relative px-4 md:px-0 pb-0 fade md:overflow-auto scroll-pr-6 md:relative"
+            className="flex flex-row md:flex-col items-start relative px-4 md:px-0 pb-0 fade md:relative"
             id="nav"
           >
             <div className="flex flex-row md:flex-col space-x-0 pr-10 mb-2 mt-2 md:mt-0">
@@ -93,7 +93,7 @@ export default function Navbar() {
                   key={path}
                   href={path}
                   className={clsx(
-                    'transition-all hover:text-neutral-800 dark:hover:text-neutral-200 py-[5px] px-[10px]',
+                    'transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle',
                     {
                       'text-neutral-500': path !== pathname,
                       'font-bold': path === pathname,
@@ -104,7 +104,7 @@ export default function Navbar() {
                     {name}
                     {path === pathname && (
                       <motion.div
-                        className="absolute inset-0 bg-neutral-800 rounded-md z-[-1]"
+                        className="absolute inset-0 bg-neutral-100 dark:bg-neutral-800 rounded-md z-[-1]"
                         layoutId="sidebar"
                         transition={{
                           type: 'spring',

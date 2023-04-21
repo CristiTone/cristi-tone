@@ -12,3 +12,22 @@ body {
 .vertical-timeline-element-date {
   margin: 0 8px;
 }
+
+/* Can't add tailwind classes to react-vertical-timeline-component elements and i need to override some styles for themes */
+@media (prefers-color-scheme: light) {
+  .vertical-timeline-element-content {
+    background-color: #e5e5e5 !important;
+  }
+  .vertical-timeline-element-date {
+    color: #262626 !important;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .vertical-timeline-element-content {
+    background-color: #262626 !important;
+  }
+  .vertical-timeline-element-date {
+    color: #e5e5e5 !important;
+  }
+}

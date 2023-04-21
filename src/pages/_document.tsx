@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html
       lang="en"
-      className="text-black bg-white dark:text-white dark:bg-[#111010]"
+      className="text-black bg-[#FAFAFA] dark:text-white dark:bg-[#111010]"
     >
       <Head />
       <body>

@@ -33,7 +33,7 @@ export default function Home() {
           />
           <div className="mt-8 md:mt-0 ml-0 md:ml-6 space-y-4 text-neutral-500 dark:text-neutral-400">
             <a
-              className="flex gap-2 items-end hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
+              className="flex gap-2 items-end  hover:text-neutral-700 dark:hover:text-neutral-200 transition-all"
               rel="noopener noreferrer"
               target="_blank"
               href="https://www.linkedin.com/in/tone-dan-cristian-506405143/"

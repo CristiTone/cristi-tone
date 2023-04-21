@@ -50,7 +50,10 @@ function ExperienceCard({ experience }: any) {
         <h3 className="text-neutral-800 dark:text-neutral-200 text-[24px] font-bold">
           {experience.title}
         </h3>
-        <p className="text-[16px] font-semibold" style={{ margin: 0 }}>
+        <p
+          className="text-[16px] text-neutral-800 dark:text-neutral-200 font-semibold"
+          style={{ margin: 0 }}
+        >
           {experience.company_name}
         </p>
       </div>
