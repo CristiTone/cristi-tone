@@ -78,7 +78,7 @@ export default function Navbar() {
 
   return (
     <aside className="md:w-[150px] md:flex-shrink-0 -mx-4 md:mx-0 md:px-0 font-serif">
-      <div className="lg:sticky lg:top-20">
+      <div className="md:sticky lg:top-20">
         <div className="ml-2 mb-6">
           <Logo />
         </div>
