@@ -2,6 +2,7 @@ import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
 import { SessionProvider } from 'next-auth/react';
 import NProgress from 'nprogress';
+import 'nprogress/nprogress.css';
 import Router from 'next/router';
 import { useEffect } from 'react';
 
