@@ -1,23 +1,23 @@
 import { Generated, Kysely } from 'kysely';
 import { PlanetScaleDialect } from 'kysely-planetscale';
 
-interface GuestbookTable {
+type GuestbookTable = {
   id: Generated<number>;
   email: string;
   message: string;
   author: string;
   created_at?: Date;
-}
+};
 
-interface ViewsTable {
+type ViewsTable = {
   slug: string;
   count: number;
-}
+};
 
-interface Database {
+type Database = {
   guestbook: GuestbookTable;
   views: ViewsTable;
-}
+};
 
 export const queryBuilder = new Kysely<Database>({
   dialect: new PlanetScaleDialect({

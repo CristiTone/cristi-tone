@@ -1,6 +1,12 @@
+import { ReactNode } from 'react';
 import { technologies } from '../helpers/experience';
 
-function TechnologyCard({ tech }: any) {
+type Tech = {
+  name: string;
+  image: () => ReactNode;
+};
+
+function TechnologyCard({ tech }: { tech: Tech }) {
   return (
     <div className="bg-neutral-200 dark:bg-neutral-800 p-1 md:p-2 rounded-xl hover:translate-y-[-16px] hover:scale-110 transition-all ease-in">
       <h4 className="hidden md:block text-neutral-800 dark:text-neutral-200 text-center font-bold">

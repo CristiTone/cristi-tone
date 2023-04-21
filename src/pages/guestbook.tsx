@@ -4,7 +4,17 @@ import PageContainer from '@/components/PageContainer';
 import { queryBuilder } from '@/lib/planetscale';
 import { useSession } from 'next-auth/react';
 
-export default function Guestbook({ guestbookData = [] }) {
+type Guestbook = {
+  id: number;
+  message: string;
+  author: string;
+};
+
+export default function Guestbook({
+  guestbookData = [],
+}: {
+  guestbookData: Guestbook[];
+}) {
   const { data: session } = useSession();
 
   return (
@@ -19,7 +29,7 @@ export default function Guestbook({ guestbookData = [] }) {
         ) : (
           <SignIn />
         )}
-        {guestbookData.map((entry: any) => (
+        {guestbookData.map((entry) => (
           <div key={entry.id} className="flex flex-col space-y-1 mb-4">
             <div className="w-full text-sm break-words">
               <span className="text-neutral-600 dark:text-neutral-400 mr-1">

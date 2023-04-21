@@ -1,10 +1,9 @@
-import Image from 'next/image';
+import { motion } from 'framer-motion';
+import Image, { StaticImageData } from 'next/image';
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
-import { motion } from 'framer-motion';
-
 import 'react-vertical-timeline-component/style.min.css';
 
 import { experiences } from '../helpers/experience';
@@ -24,14 +23,19 @@ const textVariant = {
   },
 };
 
-function ExperienceCard({ experience }: any) {
+type Experience = {
+  title: string;
+  company_name: string;
+  iconBg: string;
+  icon: StaticImageData;
+  date: string;
+  points: string[];
+};
+
+function ExperienceCard({ experience }: { experience: Experience }) {
   return (
     <VerticalTimelineElement
-      contentStyle={{
-        background: '#262626',
-        color: '#F8F8F8',
-      }}
-      contentArrowStyle={{ borderRight: '7px solid  #262626' }}
+      contentArrowStyle={{ borderRight: '7px solid #262626' }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
@@ -59,7 +63,7 @@ function ExperienceCard({ experience }: any) {
       </div>
 
       <ul className="mt-5 list-disc ml-2 space-y-2">
-        {experience.points.map((point: any, index: any) => (
+        {experience.points.map((point: string, index: number) => (
           <li
             key={`experience-point-${index}`}
             className="text-neutral-800 dark:text-neutral-200 text-[14px] tracking-wider"
